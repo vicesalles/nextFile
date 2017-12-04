@@ -2,18 +2,18 @@
 
 ## What
 
-This is an util that returns the next file name by passing in a camcorder video file name
+This is an util that returns the next file name by passing in a camcorder video file name.
 
 ## Example
 
-If you do pass a goPro file name GOPR9665.MP4 It must return GOPR9666.MP4 
+If you do pass the goPro file name GOPR9665.MP4 it must return GOPR9666.MP4 
 
 ## Supported cameras
 
-- GoPro
-- Olympus OMD
-- Canon X30
-
+- GoPro 
+- Olympus OMD x
+- Canon XA30 
+- DJI Mavic Pro 
 
 ## License
 

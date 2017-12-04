@@ -1,10 +1,8 @@
 const nextFile = require('./nextFile');
+const filenames = require('./filenameSamples');
 
-//GOPRO
-test('nextFile for GOPR9685 should be GOPR9686', () => {
-    expect(nextFile('GOPR9685')).toBe('GOPR9686');
+filenames.map((cam)=>{
+  test(`${cam.name}: nextFile for ${cam.file} should be ${cam.solution}`,()=>{
+    expect(nextFile(cam.file)).toBe(cam.solution);
   });
-
-test('nextFile for GOPR0099 should be GOPR0100', () => {
-    expect(nextFile('GOPR0099')).toBe('GOPR0100');
-  });
+})
