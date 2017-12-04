@@ -3,7 +3,7 @@
 function nextFile(fileName){
 
     //1.Split letters from numbers
-    const lletres = fileName.match(/[A-Z,a-z]+/g);        
+    const lletres = fileName.match(/[A-Z,a-z,_]+/g);        
     const nums = fileName.match(/[0-9]+/g);    
     const int = parseInt(nums[0]);
         
@@ -21,9 +21,7 @@ function nextFile(fileName){
     const nextFileName = lletres+dummyZeroes+newInt;
     console.log('nextFileName',nextFileName);
 
-
     return nextFileName; 
-
 }
 
 module.exports = nextFile;
